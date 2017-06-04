@@ -11,9 +11,12 @@ import javax.xml.bind.Unmarshaller;
 
 public class ObjectToXML {
 	public static void main(String[] args) {
-
-		  marshaller();
-		  unmarshaller();
+		
+			//Marshalling - Object to .xml
+		  	marshaller();
+		  	
+		  	//Unmarshalling - .xml - Object
+		  	unmarshaller();
 
 		}
 	
@@ -51,7 +54,7 @@ public class ObjectToXML {
 			  
 			try {
 
-				File file = new File("G:/xml/employees.xml");
+				File file = new File("/home/aniruddha/Desktop/customers.xml");
 				JAXBContext jaxbContext = JAXBContext.newInstance(Customers.class);
 				Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
@@ -63,7 +66,7 @@ public class ObjectToXML {
 
 			} 
 			catch (JAXBException e) {
-			    	  e.printStackTrace();
+			    e.printStackTrace();
 			}
 		}
 		
@@ -71,19 +74,19 @@ public class ObjectToXML {
 			
 			try {
 				
-				File file = new File("G:/xml/employees.xml");
+				File file = new File("/home/aniruddha/Desktop/customers.xml");
 				JAXBContext jaxbContext = JAXBContext.newInstance(Customers.class);
 
 				Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 				Customers customers = (Customers) jaxbUnmarshaller.unmarshal(file);
-
-				System.out.println(customers);
 				
 				List<Customer> customer = customers.getCustomers();
 				
+				System.out.println("Printing List - ");
 				ListIterator<Customer> itr=customer.listIterator();  
 				while(itr.hasNext()){  
-					System.out.println(itr.next());  
+					System.out.println(itr.next());
+					Object obj = (Customer)itr.next();
 				}  
 
 
