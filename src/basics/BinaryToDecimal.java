@@ -3,6 +3,10 @@ package basics;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class BinaryToDecimal {
 
 	public static void main(String[] args) throws Exception, NullPointerException {

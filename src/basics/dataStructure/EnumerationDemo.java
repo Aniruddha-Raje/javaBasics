@@ -3,6 +3,10 @@ package basics.dataStructure;
 import java.util.Enumeration;
 import java.util.Vector;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class EnumerationDemo {
 	public static void main(String args[]) {
 	      Enumeration days;

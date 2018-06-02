@@ -4,6 +4,10 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class FileReaderWriter {
 	public static void main(String args[]) throws IOException {
 	      FileReader in = null;

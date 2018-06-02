@@ -15,6 +15,10 @@ package basics.constructors;
 	But the constructor is implicitly called to initialize an object, 
 	so there is no purpose in having a static constructor.
 */
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class CopyConstructor {
 	 
     int id;  

@@ -3,7 +3,12 @@ package basics.dataStructure;
 import java.util.Enumeration;
 import java.util.Vector;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class VectorDemo {
+	
 	public static void main(String args[]) {
 	      // initial size is 3, increment is 2
 	      Vector v = new Vector(3, 2);

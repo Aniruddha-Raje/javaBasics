@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.ListIterator;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class IteratorDemo {
 	public static void main(String args[]) {
 	      // Create an array list

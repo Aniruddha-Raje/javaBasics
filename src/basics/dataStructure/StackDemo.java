@@ -3,6 +3,10 @@ package basics.dataStructure;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class StackDemo {
 	
 	static void showpush(Stack st, int a) {

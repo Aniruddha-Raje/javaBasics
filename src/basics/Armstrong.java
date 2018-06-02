@@ -1,5 +1,9 @@
 package basics;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class Armstrong {
 
 	public static void main(String[] args) {		

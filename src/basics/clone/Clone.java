@@ -1,6 +1,11 @@
 package basics.clone;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 class Student implements Cloneable{  
+	
 	int rollno;  
 	String name;  
 	  

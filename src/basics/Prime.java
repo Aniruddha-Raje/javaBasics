@@ -4,6 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class Prime {
 
 	public static void main(String[] args) throws IOException, Exception {

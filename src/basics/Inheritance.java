@@ -1,17 +1,21 @@
 package basics;
 
-class A{
-	void demo(){
+/**
+ * @author Aniruddha.Raje
+ *
+ */
+class A {
+	void demo() {
 		System.out.println("Called A demo");
 	}
 }
 
 public class Inheritance extends A {
 
-	void demo(){
+	void demo() {
 		System.out.println("Called Inheritance demo");
 	}
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
