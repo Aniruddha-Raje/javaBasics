@@ -10,6 +10,7 @@ import java.io.IOException;
  */
 public class FileReaderWriter {
 	public static void main(String args[]) throws IOException {
+		
 	      FileReader in = null;
 	      FileWriter out = null;
 
@@ -21,6 +22,7 @@ public class FileReaderWriter {
 	         while ((c = in.read()) != -1) {
 	            out.write(c);
 	         }
+	         
 	      }finally {
 	         if (in != null) {
 	            in.close();

@@ -9,7 +9,9 @@ import java.io.IOException;
  *
  */
 public class FileIOStream {
-	public static void main(String args[]) throws IOException {  
+	
+	public static void main(String args[]) throws IOException {
+
 	      FileInputStream in = null;
 	      FileOutputStream out = null;
 
@@ -21,6 +23,7 @@ public class FileIOStream {
 	         while ((c = in.read()) != -1) {
 	            out.write(c);
 	         }
+	         
 	      }finally {
 	         if (in != null) {
 	            in.close();

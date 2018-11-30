@@ -9,7 +9,7 @@ import java.math.BigDecimal;
  * @author Aniruddha.Raje
  *
  */
-class Developer {
+public class Developer {
 
 	private String name;
 	private BigDecimal sal;

@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
 public class Filter {
 
 	public static void main(String[] args) {
+		
 		Map<Integer, String> map = new HashMap<>();
 	    map.put(1, "aaa");
 	    map.put(2, "bbb");
@@ -31,7 +32,7 @@ public class Filter {
 	    
 	    String result2 = map.entrySet().stream()
 	    		.filter(x -> "something".equals(x.getValue()))
-	    		.map(x->x.getValue())
+	    		.map(x -> x.getValue())
 	    		.collect(Collectors.joining());
 	    System.out.println(result2);
 	    

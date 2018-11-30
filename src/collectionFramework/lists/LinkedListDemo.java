@@ -11,6 +11,8 @@ public class LinkedListDemo {
 		  al.add("Ravi");  
 		  al.add("Ajay");  
 		  
+		  al.remove("Ajay");
+		  
 		  Iterator<String> itr=al.iterator();  
 		  while(itr.hasNext()){  
 		   System.out.println(itr.next());  

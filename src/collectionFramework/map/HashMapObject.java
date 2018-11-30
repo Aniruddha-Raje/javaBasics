@@ -3,6 +3,7 @@ package collectionFramework.map;
 import java.util.*;    
 
 class HashMapBooks {
+	
 	int id;    
 	String name,author,publisher;    
 	int quantity;
@@ -20,7 +21,7 @@ public class HashMapObject {
 	public static void main(String[] args) {
 		
 	    //Creating map of Books    
-	    Map<Integer,HashMapBooks> map=new HashMap<Integer,HashMapBooks>();
+	    Map<Integer,HashMapBooks> map=new HashMap<>();
 	    
 	    //Creating Books    
 	    HashMapBooks b1=new HashMapBooks(101,"Let us C","Yashwant Kanetkar","BPB",8);
