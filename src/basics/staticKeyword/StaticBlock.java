@@ -1,10 +1,12 @@
 package basics.staticKeyword;
 
-/*STATIC VARIABLE
+/*
+STATIC VARIABLE
 - The static variable can be used to refer to the common property of all objects 
 (which is not unique for each object), 
 for example, the company name of employees, college name of students, etc.
 - The static variable gets memory only once in the class area at the time of class loading.
+- Ideally, static fields are only updated from synchronized static methods.
 
 STATIC METHOD
 - A static method belongs to the class rather than the object of a class.
@@ -15,7 +17,8 @@ STATIC METHOD
 
 STATIC BLOCK
 - Is used to initialize the static data member.
-- It is executed before the main method at the time of classloading.*/
+- It is executed before the main method 
+*/
 
 public class StaticBlock {
 	static{

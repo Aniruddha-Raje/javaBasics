@@ -1,17 +1,19 @@
 package basics.staticKeyword;
 
 public class StaticMethod {
+	
 	 int rollno;  
      String name;  
-     static String college = "ITS";  
+     static String college = "SIOM";  
        
      StaticMethod(int r, String n){  
 	     rollno = r;  
 	     name = n;  
      }  
      
-     static void change(){  
-    	 college = "BBDIT";  
+     //static void change(){  
+     void change(){  
+    	 college = "SIT";  
      }
   
      void display (){
@@ -19,11 +21,13 @@ public class StaticMethod {
      }  
   
      public static void main(String args[]){  
-    	 StaticMethod.change();  
+    	  
 	  
-    	 StaticMethod s1 = new StaticMethod (111,"Karan");  
-    	 StaticMethod s2 = new StaticMethod (222,"Aryan");  
-    	 StaticMethod s3 = new StaticMethod (333,"Sonoo");  
+    	 StaticMethod s1 = new StaticMethod (1,"Aniruddha");  
+    	 StaticMethod s2 = new StaticMethod (2,"Bhagyesha"); 
+    	 //StaticMethod.change();
+    	 s2.change(); 
+    	 StaticMethod s3 = new StaticMethod (3,"Ankita");
 	  
     	 s1.display();  
     	 s2.display();  
