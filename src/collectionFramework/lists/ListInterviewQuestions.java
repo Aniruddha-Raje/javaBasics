@@ -44,6 +44,14 @@ public class ListInterviewQuestions {
 			String temp = itr2.next();
 			System.out.println(temp);
 		}
+		
+		String data = getData();
+		System.out.println(data);
+		
+	}
+	
+	private static String getData() {
+		return "ok";
 	}
 
 }
