@@ -11,7 +11,7 @@ public class ArrayListDemo2 {
 		Student s2 = new Student(102, "Ravi", 21);
 		Student s3 = new Student(103, "Hanumat", 25);
 
-		ArrayList<Student> al = new ArrayList<Student>();// creating arraylist
+		ArrayList<Student> al = new ArrayList<>();// creating arraylist
 		al.add(s1);// adding Student class object
 		al.add(s2);
 		al.add(s3);

@@ -5,8 +5,8 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 /*
-If a class implements serializable then all its sub classes will also be serializable.
-If there is any static data member in a class, 
+If a class implements Serializable then all its sub classes will also be serializable.
+If there is any static or transient data member in a class, 
 it will not be serialized because static is the part of class not object.
 */
 

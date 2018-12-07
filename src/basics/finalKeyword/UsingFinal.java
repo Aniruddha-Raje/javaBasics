@@ -1,6 +1,13 @@
 package basics.finalKeyword;
 
-//Constructor cannot be Final, as it is never Inherited
+/*
+Use -
+Stop Class inheritance
+Stop Method overriding
+Stop Value change
+final method is inherited but you cannot override it
+Constructor cannot be Final, as it is never Inherited
+*/
 
 /**
  * @author Aniruddha.Raje

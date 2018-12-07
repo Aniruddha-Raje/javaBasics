@@ -13,6 +13,7 @@ STATIC METHOD
 - A static method can be invoked without the need for creating an instance of a class.
 - A static method can access static data member and can change the value of it.
 - The static method can not use non static data member or call non-static method directly.
+  eg - Main method
 - this and super cannot be used in static context.
 
 STATIC BLOCK
@@ -21,6 +22,7 @@ STATIC BLOCK
 */
 
 public class StaticBlock {
+	
 	static{
 		System.out.println("I'll be called before Main method");
 	}  

@@ -7,7 +7,6 @@ package basics.recursion;
  * @author Aniruddha.Raje
  *
  */
-
 public class Factorial {
 	
 	static int factorial(int n) {
