@@ -1,4 +1,4 @@
-package basics.stringmethods;
+package basics.string;
 
 public class StringInterviewQuestions {
 
@@ -22,18 +22,22 @@ public class StringInterviewQuestions {
 		System.out.println(s1.equals(s4));//false because content is not same
 		System.out.println("\n");
 		
-		String str = new String("Hello");
+		String str1 = new String("Hello");
 		String str2 = "Hello";
 		String str3 = new String("Hello");
 		String str4 = "Hello";
 		
 		//False
-		if(str == str2) {
+		if(str1 == str2) {
 			System.out.println("str == str2");
 		}
 		//False
-		if(str == str3) {
-			System.out.println("str == str3");
+		if(str1 == str3) {
+			System.out.println("str1 == str3");
+		}
+		//False
+		if(str2 == str3) {
+			System.out.println("str2 == str3");
 		}
 		//True
 		if(str2 == str4) {
@@ -41,11 +45,21 @@ public class StringInterviewQuestions {
 		}
 		
 		//True
-		System.out.println("str equals str2 => "+str.equals(str2));
-		System.out.println("str equals str3 => "+str.equals(str3));
+		System.out.println("\nstr equals str2 => "+str1.equals(str2));
+		System.out.println("str equals str3 => "+str1.equals(str3));
+		System.out.println("str2 equals str3 => "+str2.equals(str3));
 		
-		//
+		//To split a String into character array
 		char[] charArr = s4.toCharArray();
+		
+		Object o1 = new Object();
+		Object o2 = new Object();
+		System.out.println("\nObject equals => "+o1.equals(o2));
+		
+		String string1 = new String();
+		String string2 = new String();
+		System.out.println("String equals => "+string1.equals(string2));
+		
 	}
 
 }
