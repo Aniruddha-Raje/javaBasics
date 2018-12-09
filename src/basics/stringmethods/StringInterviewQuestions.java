@@ -42,8 +42,10 @@ public class StringInterviewQuestions {
 		
 		//True
 		System.out.println("str equals str2 => "+str.equals(str2));
-		
 		System.out.println("str equals str3 => "+str.equals(str3));
+		
+		//
+		char[] charArr = s4.toCharArray();
 	}
 
 }

@@ -14,6 +14,13 @@ public class ArrayInterviewQuestion {
 	public static void main(String[] args) {
 		String [] strArr = {"A","C","B"};
 		int [] intArr = {1,3,2};
+		Arrays.sort(intArr);
+		
+		//Doesn't show 
+		System.out.println("Int sorted array => \n");
+		for(int temp : intArr) {
+			System.out.println(temp);
+		}
 		
 		String str = "Hello";
 		char [] charArr = str.toCharArray();

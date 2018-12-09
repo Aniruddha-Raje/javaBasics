@@ -2,9 +2,7 @@ package basics.stringmethods;
 
 public class StringPOC {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	public static void main(String[] args) {		
 		String Str = new String("XYZ: ABC PSR S01 EP07");
 		System.out.println("Original String is : "+Str);
 		

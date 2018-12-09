@@ -11,10 +11,8 @@ import java.io.InputStreamReader;
 public class Factorial {
 
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
 		Fact obj = new Fact();
 		obj.getNumber();
-		
 	}
 
 }

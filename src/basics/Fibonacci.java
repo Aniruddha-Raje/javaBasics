@@ -10,12 +10,9 @@ import java.io.InputStreamReader;
 public class Fibonacci {
 
 	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
-		
 		CalcFibo obj = new CalcFibo();
 		obj.getNumber();
 	}
-
 }
 
 class CalcFibo{
@@ -23,12 +20,7 @@ class CalcFibo{
 	InputStreamReader isr;
 	BufferedReader br;
 	int firstNum, secondNum, thirdNum, i, len;
-	
-	CalcFibo() {
-		// TODO Auto-generated constructor stub
-
-	}
-	
+		
 	void getNumber() throws Exception, Exception{
 		
 		isr = new InputStreamReader(System.in);  

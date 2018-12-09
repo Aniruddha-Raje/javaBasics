@@ -11,7 +11,6 @@ import java.io.InputStreamReader;
 public class ReverseNumber {
 
 	public static void main(String[] args) throws Exception, Exception {
-		// TODO Auto-generated method stub
 		Reverse obj = new Reverse();
 		obj.getNummber();
 	}
