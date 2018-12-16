@@ -1,7 +1,7 @@
 /**
  * 
  */
-package basics.staticKeyword;
+package basics.statics;
 
 /**
  * @author Aniruddha.Raje

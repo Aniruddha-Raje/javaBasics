@@ -1,7 +1,7 @@
 /**
  * 
  */
-package basics.mathClass;
+package basics.math;
 
 /**
  * @author Aniruddha.Raje

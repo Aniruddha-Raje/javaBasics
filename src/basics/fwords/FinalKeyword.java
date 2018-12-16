@@ -1,4 +1,4 @@
-package basics.finalKeyword;
+package basics.fwords;
 
 /*
 Use -
@@ -13,7 +13,7 @@ Constructor cannot be Final, as it is never Inherited
  * @author Aniruddha.Raje
  *
  */
-final public class UsingFinal {
+final public class FinalKeyword {
 	
 	int id;
 	final String name = "abc";
@@ -24,7 +24,7 @@ final public class UsingFinal {
 		contact = "mno"; 
 	}
 	
-	public UsingFinal() {
+	public FinalKeyword() {
 		id = 10;
 		//name = "pqr"; //Won't allow
 		address = "xyz";
@@ -39,7 +39,7 @@ final public class UsingFinal {
 	}
 	
 	public static void main(String[] args) {
-		UsingFinal obj = new UsingFinal();
+		FinalKeyword obj = new FinalKeyword();
 	}
 }
 

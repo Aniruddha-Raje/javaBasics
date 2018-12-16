@@ -1,4 +1,4 @@
-package basics.staticKeyword;
+package basics.statics;
 
 public class StaticMethodRetrictions {
 	int a = 40;// non static

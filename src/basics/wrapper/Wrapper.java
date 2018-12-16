@@ -15,7 +15,10 @@ public class Wrapper {
 		// converting int into Integer
 		Integer i = Integer.valueOf(a);
 
-		//autoboxing
+		//Boxing
+		Integer ref = new Integer(a);
+
+		//Autoboxing
 		Integer wrapper = a;
 		
 		//Unboxing

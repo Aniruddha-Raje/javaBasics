@@ -1,4 +1,4 @@
-package basics.staticKeyword;
+package basics.statics;
 
 /*
 STATIC VARIABLE

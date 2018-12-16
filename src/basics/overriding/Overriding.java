@@ -1,4 +1,4 @@
-package basics.methodOverriding;
+package basics.overriding;
 
 /**
  * @author Aniruddha.Raje

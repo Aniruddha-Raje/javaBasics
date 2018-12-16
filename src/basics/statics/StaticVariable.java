@@ -1,4 +1,4 @@
-package basics.staticKeyword;
+package basics.statics;
 
 /*
  	Memory for variable static String college, will be allocated only once, 

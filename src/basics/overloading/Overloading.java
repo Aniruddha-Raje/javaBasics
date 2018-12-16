@@ -1,4 +1,4 @@
-package basics.methodOverloading;
+package basics.overloading;
 
 /**
  * @author Aniruddha.Raje

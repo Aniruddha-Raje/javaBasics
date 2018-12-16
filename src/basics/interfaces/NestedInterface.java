@@ -1,4 +1,4 @@
-package basics.interfaceKeyword;
+package basics.interfaces;
 
 /**
  * @author Aniruddha.Raje

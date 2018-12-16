@@ -28,6 +28,7 @@ public class StringInterviewQuestions {
 		String str4 = "Hello";
 		
 		//False
+		//Compares references
 		if(str1 == str2) {
 			System.out.println("str == str2");
 		}
@@ -45,6 +46,7 @@ public class StringInterviewQuestions {
 		}
 		
 		//True
+		//Compares values
 		System.out.println("\nstr equals str2 => "+str1.equals(str2));
 		System.out.println("str equals str3 => "+str1.equals(str3));
 		System.out.println("str2 equals str3 => "+str2.equals(str3));
