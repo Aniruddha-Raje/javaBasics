@@ -15,6 +15,8 @@ public class StaticMethodRetrictions {
 	public void sayHello() {
 		System.out.println("Hello");
 		
+		System.out.println("Access Non Static variable => "+a);
+		System.out.println("Access Static variable => "+b);
 		sayBye(); // Non static methods can call other non static methods
 		staticBye();// Non static methods can call other static methods
 	}
@@ -24,6 +26,7 @@ public class StaticMethodRetrictions {
 	}
 
 	public static void staticBye() {
+		System.out.println("Access Static variable => "+b);
 		System.out.println("static Bye");
 	}
 }

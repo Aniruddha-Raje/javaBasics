@@ -9,7 +9,7 @@ public class HashMapDemo {
 		//LinkedHashMap is ordered by entries
 		//TreeMap is ordered and sorted
 		
-		HashMap<Integer, String> hashMap = new HashMap<Integer, String>();
+		HashMap<Integer, String> hashMap = new HashMap<>();
 		hashMap.put(100, "Bhagyesha");
 		hashMap.put(101, "Shweta");
 		hashMap.put(102, "Pranjali");

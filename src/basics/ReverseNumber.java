@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
  */
 public class ReverseNumber {
 
-	public static void main(String[] args) throws Exception, Exception {
+	public static void main(String[] args) throws Exception {
 		Reverse obj = new Reverse();
 		obj.getNummber();
 	}
