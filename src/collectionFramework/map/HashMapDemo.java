@@ -5,9 +5,11 @@ import java.util.*;
 public class HashMapDemo {
 	public static void main(String args[]) {
 
-		//HashMap is unordered and unsorted
+		//Map keys must be unique
+		//HashMap is unordered and unsorted, allows one null key
 		//LinkedHashMap is ordered by entries
-		//TreeMap is ordered and sorted
+		//TreeMap is ordered and sorted, do not allow null key
+		//HashTable is similar to HashMap but syncronized, does not allow null key
 		
 		HashMap<Integer, String> hashMap = new HashMap<>();
 		hashMap.put(100, "Bhagyesha");

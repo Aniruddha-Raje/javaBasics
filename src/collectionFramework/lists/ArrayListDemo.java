@@ -16,6 +16,15 @@ import java.util.Iterator;
 	StringBuilder instead of StringBuffer
 */
 
+/*
+ Defualt Sizes -
+ HashMap, HashSet, TreeSet - 16
+ HashTable - 11
+ ArrayList, Vector - 10
+ LinkedList - 1
+ StringBuffer - 16
+ */
+
 public class ArrayListDemo {
 
 	public static void main(String[] args) {

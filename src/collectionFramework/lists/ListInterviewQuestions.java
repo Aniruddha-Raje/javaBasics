@@ -6,11 +6,14 @@ package collectionFramework.lists;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * @author Aniruddha.Raje
  *
  */
+//Vector doubles its array size
+//ArrayList grow 50% of its size
 public class ListInterviewQuestions {
 	
 	public static void main(String[] args) {
@@ -47,6 +50,12 @@ public class ListInterviewQuestions {
 		
 		String data = getData();
 		System.out.println(data);
+		
+		List<String> l = new ArrayList<>(2);
+		l.add("a");
+		l.add("b");
+		l.add("c");
+		System.out.println(l.size());
 		
 	}
 	
