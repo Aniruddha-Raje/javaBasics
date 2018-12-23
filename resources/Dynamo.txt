@@ -1,0 +1,101 @@
+
+1. Save 
+public boolean saveUserDetails(UserSessionDomain userSessionDomain) {
+	DynamoDBUtil dynamoDBUtil = new DynamoDBUtil();
+	AmazonDynamoDB dynamoDBClient = dynamoDBUtil.getDynamoDBClient();
+
+	DynamoDBMapper mapper = new DynamoDBMapper(dynamoDBClient);
+
+	mapper.save(userSessionDomain);
+	return true;
+}
+
+2. Batch Save
+public boolean saveUpdateUserDetails(List<UserSessionDomain> userSessionDomain) {
+	DynamoDBUtil dynamoDBUtil = new DynamoDBUtil();
+	AmazonDynamoDB dynamoDBClient = dynamoDBUtil.getDynamoDBClient();
+	DynamoDBMapper mapper = new DynamoDBMapper(dynamoDBClient);
+	mapper.batchSave(userSessionDomain);
+	return true;
+}
+
+3. Delete By Id 
+//KeyConditionExpression
+public Boolean deleteSessionByDeviceId(String deviceId) {
+	log.debug("UserSessionDomain getRegisteredDevices() entry");
+	
+	UserSessionDomain userSession = null;
+	DynamoDBUtil dynamoDBUtil = new DynamoDBUtil();
+	DynamoDB dynamoDB = dynamoDBUtil.getDynamoDBConnection();
+	
+	Table table = dynamoDB.getTable(IConstants.USER_SESSION_TABLE);
+	Index index = table.getIndex(INDEX_DEVICE_ID);
+
+	QuerySpec spec = new QuerySpec().withKeyConditionExpression(COMPARE_DEVICE_ID_V_DEVICE_ID)
+			.withValueMap(new ValueMap().withString(VALUE_DEVICE_ID, deviceId));
+
+	ItemCollection<QueryOutcome> items = index.query(spec);
+
+	Iterator<Item> itemsIter = items.iterator();
+	while (itemsIter.hasNext()) {
+		Item outcome = itemsIter.next();
+		
+		GsonBuilder builder = new GsonBuilder();
+		Gson gson = builder.create();
+		
+		userSession = gson.fromJson(outcome.toJSON(), UserSessionDomain.class);
+
+		table.deleteItem(IConstants.SESSION_TABLE_PRIMARY_KEY, userSession.getSessionToken());
+	}
+	log.debug("UserSessionDomain getRegisteredDevices() exit");
+	return true;
+}
+
+4. Get By Id 
+public UserSessionDomain getSessionToken(String sessionToken) {
+	DynamoDBUtil dynamoDBUtil = new DynamoDBUtil();
+	AmazonDynamoDB dynamoDBClient = dynamoDBUtil.getDynamoDBClient();
+	DynamoDBMapper mapper = new DynamoDBMapper(dynamoDBClient);
+	return mapper.load(UserSessionDomain.class, sessionToken);
+}
+
+5. Get By Index
+public List<PageDomain> getPageByContainerId(String pageContainer) throws PageContainerNullException {
+	log.debug("PAGE ID IS:" + pageContainer);
+	DynamoDBUtil dynamoDBUtil = new DynamoDBUtil();
+	DynamoDB dynamoDB = dynamoDBUtil.getDynamoDBConnection();
+	
+	List<PageDomain> response = null;
+	Table table = dynamoDB.getTable(IConstants.PAGE_TABLE);
+
+	Index index = table.getIndex("pageContainer-index");
+
+	QuerySpec spec = new QuerySpec().withKeyConditionExpression("pageContainer= :v_pageContainer")
+			.withValueMap(new ValueMap().withString(":v_pageContainer", pageContainer));
+
+	ItemCollection<QueryOutcome> items = index.query(spec);
+	Iterator<Item> itemsIter = items.iterator();
+
+	response = new ArrayList<>();
+	while (itemsIter.hasNext()) {
+		Item item = itemsIter.next();
+		log.debug(item.toJSONPretty());
+		response.add(new Gson().fromJson(item.toJSONPretty(), PageDomain.class));
+	}
+	return response;
+}
+
+6. Delete by Primary + Sort Key
+public Boolean deleteSearchHistoryByUserId(String userId, String normalisedKeyword) {
+	DynamoDBUtil dynamoDBUtil = new DynamoDBUtil();
+	AmazonDynamoDB dynamoDBClient = dynamoDBUtil.getDynamoDBClient();
+	DynamoDB dynamoDB = new DynamoDB(dynamoDBClient);
+	
+	Table table = dynamoDB.getTable(IConstants.SEARCH_HISTORY_TABLE);
+
+	DeleteItemSpec deleteSearchHistoryItemSpec = new DeleteItemSpec()
+			.withPrimaryKey("userId",userId,"normalisedKeyword",normalisedKeyword);
+	
+	table.deleteItem(deleteSearchHistoryItemSpec);
+	return true;
+}
