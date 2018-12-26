@@ -15,6 +15,11 @@ public class Overloading {
 		System.out.println("int + int called!");
 	}
 	
+	//Not allowed
+	/*public int sum(int a, int b){
+		System.out.println("int + int called!");
+	}*/
+	
 	public void sum(int a, Integer b){
 		System.out.println("int + Integer called!");
 	}
