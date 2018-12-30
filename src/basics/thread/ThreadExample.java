@@ -48,7 +48,11 @@ class ExtendsThread extends Thread {
 
 class ImplementsRunnable implements Runnable {
 	public void run() {
-		System.out.println("Implements => " + Thread.currentThread().getName());
+		
+		System.out.println("Implements => " + Thread.currentThread().getName() 
+				+ " ID => " + Thread.currentThread().getId() 
+				+ " Priority => " + Thread.currentThread().getPriority()
+				+ " State => " + Thread.currentThread().getState());
 		printNumbers();
 	}
 	

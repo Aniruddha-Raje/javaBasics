@@ -4,6 +4,8 @@ package basics.overriding;
  * @author Aniruddha.Raje
  *
  */
+
+//You cannot override a private or static method in Java.
 class Base{
 	public void sayHello(){
 		System.out.println("Parent Hello");

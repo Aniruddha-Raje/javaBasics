@@ -15,7 +15,12 @@ public class Overloading {
 		System.out.println("int + int called!");
 	}
 	
-	//Not allowed
+	//Not allowed - static won't make a diff
+	/*public static void sum(int a, int b){
+		System.out.println("int + int called!");
+	}*/
+	
+	//Not allowed - return type won't make a diff
 	/*public int sum(int a, int b){
 		System.out.println("int + int called!");
 	}*/

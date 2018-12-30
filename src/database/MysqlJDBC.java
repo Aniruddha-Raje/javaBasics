@@ -12,6 +12,19 @@ import java.sql.Statement;
  * @author Aniruddha.Raje
  *
  */
+
+/*
+Steps to connect to a database in java?
+1. Registering the driver class
+2. Creating connection
+3. Creating statement
+4. Executing queries
+5. Closing connection
+*/
+//Statement - used to execute normal SQL queries. You can’t pass the parameters
+//PreparedStatement - used to execute dynamic or parameterized SQL queries
+//CallableStatement - used to execute the stored procedures
+//ResultSet object represents a row of a table.
 public class MysqlJDBC {
 	public static void main(String args[]) {
 		
