@@ -7,8 +7,15 @@ package basics;
  * @author Aniruddha.Raje
  *
  */
+//You cannot Override a Private or a Static(belongs to class) method
+
 //JVM(Has interpreter - line by line) + Libraries = JRE
 //JRE + Development tools(Compiler) = JDK
+
+//System.out.println
+//System - is a class in the java.lang package.
+//out - is a static member of the System class, and is an instance of java.io.PrintStream.
+//print, println and printf - are methods of java.io.PrintStream.
 
 //Heap - Objects + String Pool - Young generation(Eden,S0,S1) has Minor gc, 
 //Objects that have survived many cycles of GC, are moved to the old generation memory space.

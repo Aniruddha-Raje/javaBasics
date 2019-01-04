@@ -7,6 +7,8 @@ import java.util.Vector;
  * @author Aniruddha.Raje
  *
  */
+
+//Vector and HashTable can use Enumeration to iterate
 public class VectorDemo {
 	
 	public static void main(String args[]) {
