@@ -5,7 +5,9 @@ package basics.interfaces;
  *
  */
 interface Base{
+	
 	public void sayHello();
+	
 	public static void sayBye(){
 		System.out.println("Interface's static Bye");
 	}
@@ -16,6 +18,7 @@ interface Base{
 }
 
 public class UsingInterface implements Base{
+	
 	public static void main(String[] args) {
 		Base obj = new UsingInterface();
 		obj.defaultSayBye();

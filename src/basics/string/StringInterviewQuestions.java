@@ -58,8 +58,8 @@ public class StringInterviewQuestions {
 		Object o2 = new Object();
 		System.out.println("\nObject equals => " + o1.equals(o2));
 
-		String string1 = new String();
-		String string2 = new String();
+		String string1 = new String("aaa");
+		String string2 = new String("aaa");
 		System.out.println("String equals => " + string1.equals(string2));
 
 		String abc = "100";

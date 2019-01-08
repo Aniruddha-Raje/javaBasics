@@ -1,9 +1,12 @@
 package basics.stringmethods;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class FormatExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		String name="sonoo";  
 		String sf1=String.format("name is %s",name);  

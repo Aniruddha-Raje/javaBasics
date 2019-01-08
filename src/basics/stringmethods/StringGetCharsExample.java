@@ -1,9 +1,12 @@
 package basics.stringmethods;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class StringGetCharsExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		String str = new String("hello javatpoint how r u");  
 	      char[] ch = new char[10];  

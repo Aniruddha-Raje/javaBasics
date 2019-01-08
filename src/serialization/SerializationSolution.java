@@ -7,6 +7,10 @@ import java.io.ObjectOutputStream;
 import java.io.ObjectStreamException;
 import java.io.Serializable;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 class Singletons implements Serializable{
 
 	private static Singletons soleInstance = new Singletons(); 

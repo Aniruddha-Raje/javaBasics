@@ -8,9 +8,8 @@ package basics.thread;
  *
  */
 
-//volatile is a field modifier,
-//while synchronized modifies code blocks and methods.
-
+// volatile is a field modifier,
+// while synchronized modifies code blocks and methods.
 public class SyncronizedExample {
 	public static void main(String args[]) {
 		final Table obj = new Table();

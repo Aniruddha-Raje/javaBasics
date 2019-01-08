@@ -2,6 +2,10 @@ package jaxB;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 @XmlRootElement
 public class Customer {
 	

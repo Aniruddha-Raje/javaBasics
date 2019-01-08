@@ -4,6 +4,10 @@ import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 @XmlRootElement
 public class Customers {
 

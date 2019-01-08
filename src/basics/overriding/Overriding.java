@@ -7,6 +7,7 @@ package basics.overriding;
 
 // You cannot override a private or static method in Java.
 class Base {
+	
 	int a = 10;
 	static int b = 20;
 
@@ -27,6 +28,7 @@ public class Overriding extends Base {
 
 	public static void main(String[] args) {
 		Base obj = new Overriding();
+		
 		obj.sayHello();
 		obj.sayBye();
 		// Reference can access both Static and Non Static variables

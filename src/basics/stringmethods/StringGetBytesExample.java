@@ -1,9 +1,12 @@
 package basics.stringmethods;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class StringGetBytesExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		String s1="ABCDEFG";  
 		byte[] barr=s1.getBytes();  

@@ -1,9 +1,12 @@
 package basics.stringmethods;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class IndexOfExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		String s1="this is index of example";  
 		//passing substring  

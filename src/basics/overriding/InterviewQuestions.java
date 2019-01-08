@@ -7,7 +7,6 @@ package basics.overriding;
  * @author Aniruddha.Raje
  *
  */
-
 abstract class Parent {
 	protected abstract int doSomething(int x); 
 }

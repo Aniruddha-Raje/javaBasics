@@ -1,5 +1,9 @@
 package basics.stringmethods;
 
+/**
+ * @author Aniruddha.Raje
+ *
+ */
 public class CompareToExample {
 
 	public static void main(String[] args) {
